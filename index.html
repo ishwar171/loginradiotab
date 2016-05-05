@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>TASK</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="fonts/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/task.css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			function showsignup(){
+				$("#login").hide();
+   				$("#signup").show();
+			}
+			function showlogin(){
+   				$("#signup").hide();
+   				$("#login").show();
+			}
+			$( document ).ready(function() {
+   				showsignup();
+			});
+			$( document ).ready(function() {
+				$("#usersign1").click(function(){
+					$("#signup12").show();
+					$("#signup13").hide();
+				});
+			});
+			$( document ).ready(function() {
+				$("#usersign2").click(function(){
+					$("#signup12").hide();
+					$("#signup13").show();
+				});
+			});
+			$( document ).ready(function() {
+				$("#logindoctor1").click(function(){
+					$("#logindoctor").show();
+					$("#loginuser13").hide();
+					$("#loginhospital").hide();
+				});
+			});
+			$( document ).ready(function() {
+				$("#loginhosiptal1").click(function(){
+					$("#logindoctor").hide();
+					$("#loginuser13").hide();
+					$("#loginhospital").show();
+				});
+			});
+			$( document ).ready(function() {
+				$("#loginuser14").click(function(){
+					$("#logindoctor").hide();
+					$("#loginuser13").show();
+					$("#loginhospital").hide();
+				});
+			});
+		</script>
+	</head>
+	<body class="maincontent">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-2"></div>
+						<div class="col-md-8 contentcolumns">
+							<div class="row">
+								<div class="col-md-6">
+									<div class="signup animated slideInRight shake" id="signup">
+										<h4>Sign Up As :</h4><br>
+									  	<!--<input name="username" placeholder="Full Name" class="form-control" type="text"><br>
+									  	<input name="email" placeholder="E-Mail Address"  class="form-control" type="text"><br>
+									 	<input name="password" placeholder="Password"  class="form-control" type="password"><br>---->
+										<form action="#">
+											<label class="radio-inline">
+												<input type="radio" id="usersign2" name="optradio" checked>Doctor
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="optradio" id="usersign1">User
+											</label>	
+										</form>
+										<br>
+									 	<form action="#" id="signup13">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Full Name">
+									         	<span class="input-group-addon usericon"><i class="fa fa-user"></i></span>
+											</div>
+									        <br>
+									        <div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+											</div>
+											<br>
+									        <div class="input-group input-group-lg">
+												<input type="password" class="form-control fullname" placeholder="Password">
+												<span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+											<div class="input-group input-group-lg">
+												<input type="password" class="form-control fullname" placeholder="Confirm Password">
+												<span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+											<br>
+											<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Mobile">
+									         	<span class="input-group-addon usericon"><i class="fa fa-phone"></i></span>
+											</div>
+											<br>
+											<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Medical Registration Number">
+									         	<span class="input-group-addon usericon"><i class="fa fa-user-md" aria-hidden="true"></i></span>
+											</div>
+											<br>
+											<div class="row">
+												<div class="col-md-9">
+									 				<h5 class="forgotterms">By clicking on Sign up, you agree to our <a href="#">Terms</a> & <a href="#">Privacy Policy</a></h5>
+									 			</div>
+												<button class="btn btn-success col-md-3 pull-right signbtn1">SIGN UP</button>
+											</div>
+										</form>
+									 	<form action="#" style="display:none" id="signup12">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Full Name">
+									         	<span class="input-group-addon usericon"><i class="fa fa-user"></i></span>
+											</div>
+									        <br>
+									        <div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+											</div>
+											<br>
+									        <div class="input-group input-group-lg">
+												<input type="password" class="form-control fullname" placeholder="Password">
+												<span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+											<div class="input-group input-group-lg">
+												<input type="password" class="form-control fullname" placeholder="Confirm Password">
+												<span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+											<br>
+											<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="Mobile">
+									         	<span class="input-group-addon usericon"><i class="fa fa-phone"></i></span>
+											</div>
+											<br>
+											<div class="row">
+												<div class="col-md-9">
+									 				<h5 class="forgotterms">By clicking on Sign up, you agree to our <a href="#">Terms</a> & <a href="#">Privacy Policy</a></h5>
+									 			</div>
+												<button class="btn btn-default col-md-3 pull-right signbtn1">SIGN UP</button>
+											</div>
+									  </form>
+									</div>
+									<h3>Don't Have an account?</h3>
+									<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+									<br>
+									<button class="btn btn-default signbtn" onclick="showsignup();">SIGN UP</button>
+								</div>
+								<div class="col-md-6">
+									<h3>Don't Have an account?</h3>
+									<p>Bangio tote bag bicycle rights, High Life sartorial cray craft beer whatever  street art fap</p>
+									<br>
+									<button class="btn btn-default loginbtn" onclick="showlogin();">Log In</button>
+									<div class="login animated slideInLeft shake" id="login">
+										<h4>Login As :</h4><br>
+										<form action="#">
+											<label class="radio-inline">
+												<input type="radio" id="loginuser14" name="optradio" checked>User
+											</label>
+											<label class="radio-inline">
+												<input type="radio" id="logindoctor1" name="optradio">Doctor
+											</label>
+											<label class="radio-inline">
+												<input type="radio" id="loginhosiptal1" name="optradio">Hosiptal
+											</label>
+										</form>
+										<br>
+									  	<form action="#" id="loginuser13">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+											</div>
+											<br>
+											<div class="input-group input-group-lg">
+									          	<input type="password" class="form-control fullname" placeholder="Password">
+									           <span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+									 		<div class="row">
+									 			<div class="col-md-7">
+									 				<h5 class="forgot" data-toggle="modal" data-target="#myModal">Forgot Password?</h5>
+													<h5 class="forgotchange" data-toggle="modal" data-target="#myModal1">Change Password</h5>
+									 			</div>
+									 			<button class="btn btn-success loginbtn1 col-md-4 pull-right">Sign In</button>
+									 		</div>
+											<h4 class="orcontent">OR</h4>
+											<div class="row">
+												<div class="col-md-2"></div>
+													<button class="btn loginfacebook col-sm-8 text-center"><i class="fa fa-facebook facbookicon"></i>&nbsp; Log in with Facebook</button>
+												<div class="col-md-2"></div>
+											</div>
+									  	</form>
+										<form action="#" style="display:none;" id="logindoctor">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+											</div>
+											<br>
+											<div class="input-group input-group-lg">
+									          	<input type="password" class="form-control fullname" placeholder="Password">
+									           <span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+									 		<div class="row">
+									 			<div class="col-md-7">
+									 				<h5 class="forgot" data-toggle="modal" data-target="#myModal">Forgot Password?</h5>
+													<h5 class="forgotchange" data-toggle="modal" data-target="#myModal1">Change Password</h5>
+									 			</div>
+									 			<button class="btn btn-success loginbtn1 col-md-4 pull-right">Sign In</button>
+									 		</div>
+										</form>
+										<form action="#" style="display:none;" id="loginhospital">
+									      	<div class="input-group input-group-lg">	
+									        	<input type="text" class="form-control fullname" placeholder="E-mail Address">
+									         	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+											</div>
+											<br>
+											<div class="input-group input-group-lg">
+									          	<input type="password" class="form-control fullname" placeholder="Password">
+									           <span class="input-group-addon usericon"><i class="fa fa-lock"></i></span>
+									        </div>
+									        <br>
+									 		<div class="row">
+									 			<div class="col-md-7">
+									 				<h5 class="forgot" data-toggle="modal" data-target="#myModal">Forgot Password?</h5>
+													<h5 class="forgotchange" data-toggle="modal" data-target="#myModal1">Change Password</h5>
+									 			</div>
+									 			<button class="btn btn-success loginbtn1 col-md-4 pull-right">Sign In</button>
+									 		</div>
+											<h4 class="orcontent">OR</h4>
+										</form>
+									</div>
+									<!--------MODAL FORGOT PASSWORD START---------------->
+									<div id="myModal" class="modal animated zoomIn" role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header headermodal1">
+													<button type="button" class="close closebtn" data-dismiss="modal">&times;</button>
+													<h4 class="modal-title headermodal2">Forgot Password</h4>
+												</div>
+												<div class="modal-body bodymodal">
+													<form action="#">
+														<div class="row">
+															<div class="col-md-1"></div>
+																<div class="col-md-8">
+																	<div class="input-group input-group-lg">	
+																		<input type="text" class="form-control fullname" placeholder="E-mail Address or Mobile Number">
+																	<span class="input-group-addon usericon"><i class="fa fa-envelope"></i></span>
+																</div>
+															</div>
+															<div class="col-md-3">
+																<button class="btn signbtn1 text-center">Sumbit</button>
+															</div>
+														</div>	
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--------MODAL FORGOT PASSWORD START---------------->
+								</div>
+							</div>
+							<!--------MODAL CHANGE PASSWORD START---------------->
+							<div id="myModal1" class="modal animated zoomIn" role="dialog">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header headermodal1">
+											<button type="button" class="close closebtn" data-dismiss="modal">&times;</button>
+											<h4 class="modal-title headermodal2">Change Password</h4>
+										</div>
+										<div class="modal-body bodymodal">
+											<form action="#">
+												<div class="row">
+													<div class="col-md-1"></div>
+													<div class="col-md-10">
+														<div class="row">
+															<div class="col-md-4 oldpassword">
+																<label for="email">Old Password:</label>
+															</div>
+															<div class="col-md-8">
+																<input type="password" class="form-control fullname" placeholder="Password">
+															</div>
+														</div>
+														<br>
+														<div class="row">
+															<div class="col-md-4 oldpassword">
+																<label for="email">New Password:</label>
+															</div>
+															<div class="col-md-8">
+																<input type="password" class="form-control fullname" placeholder="New Password">
+															</div>
+														</div>
+														</br>
+														<div class="row">
+															<div class="col-md-4 oldpassword">
+																<label for="email">Confirm Password:</label>
+															</div>
+															<div class="col-md-8">
+																<input type="password" class="form-control fullname" placeholder="Confirm Password">
+															</div>
+														</div>
+														<br>
+														<div class="row">
+															<div class="col-md-4"></div>
+															<div class="col-md-8">
+																<div class="row">
+																	<div class="col-md-4">
+																		<button class="btn signbtn1 text-center">Sumbit</button>
+																	</div>
+																	<div class="col-md-4">
+																		<button class="btn signbtn1 text-center">Canel</button>
+																	</div>
+																	<div class="col-md-4"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="col-md-1"></div>
+												</div>	
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--------MODAL CHANGE PASSWORD ENDS---------------->
+						</div>
+						<div class="col-md-2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
